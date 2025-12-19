@@ -7,19 +7,24 @@ and checked for ripeness.
 from farm.corn import Corn
 
 
-print("\n\n📝 Day One: Corn")
+from farm.corn import Corn  # Corn sınıfını içeri aldık
 
-# 1. Instantiate a corn crop
-pass  # YOUR CODE HERE
+print("\n📝 Day One: Corn")
 
-# 2. Water the corn crop
-pass  # YOUR CODE HERE
+# 1. Bir Mısır ekin (Instance oluşturun)
+crop = Corn()
 
-# 3. Print "The corn crop produced ## grains"
-pass  # YOUR CODE HERE
+# 2. Mısırı sulayın (water metodunu çağırın)
+crop.water()
 
-# 4. Print "The corn crop is ripe" or "The corn crop is not ripe"
-pass  # YOUR CODE HERE
+# 3. Durumu yazdırın
+print(f"The corn crop produced {crop.grains} grains")
+
+# 4. Olgunlaştı mı kontrol edin
+if crop.ripe():
+    print("The corn crop is ripe")
+else:
+    print("The corn crop is not ripe")
 
 print("\n\n📝 Day Two: Rice")
 
