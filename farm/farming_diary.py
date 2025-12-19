@@ -27,7 +27,7 @@ else:
     print("The corn crop is not ripe")
 
 print("\n\n📝 Day Two: Rice")
-from farm.rice import Rice
+from farm.rice import Rice  # Rice sınıfını içeri aldık
 crop = Rice()
 
 # 2. Mısırı sulayın (water metodunu çağırın)
